@@ -16,7 +16,7 @@ class MyGallery extends Component {
                     {movies.map((movie, index) => {
                         console.log(movie);
                         return (
-                            <Col className="mb-2 px-1"
+                            <Col xs={12} md={4} className="mb-2 px-1"
                                 key={`movie-${index}`}>
                                 <Image fluid src={movie.Poster} alt="movie picture" style={{height:"200px", width:"200px"}}/>
                             </Col>
